@@ -1,0 +1,455 @@
+/* Styles used on multiple pages */
+
+body {
+    max-width: 1160px;
+    font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+    font-size: 1em;
+    color: #2c3e50;
+    background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* rules for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 10px;
+    padding: 15px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#leftHeader img {
+    max-width: 150px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* rules for the center header */
+#searchBoxForm {
+    margin-top: 30px;
+    display: flex;
+}
+#searchBox {
+    height: 20px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.dropdownSelect {
+    width: 189px;
+    padding: 8px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    text-align: center;
+    display: block;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.dropdownSelect:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    padding: 8px 0;
+    z-index: 1;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdownContent a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* rules for the right header */
+
+#rightHeader {
+    display: flex;
+    margin-top: 40px;
+}
+
+#cartCount{
+    width: 150px;
+    margin: 8px 0 0 10px;
+    font-weight: 600;
+    color: white;
+}
+
+#cartIcon a {
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+#cartIcon a:hover {
+    transform: scale(1.1);
+}
+
+#cartIcon img {
+    transition: transform 0.2s ease;
+}
+
+.loginButton {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    width: 60px;
+    height: 32px;
+    margin: 4px auto 0 auto;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-weight: 600;
+}
+
+.loginButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.loginButton a{
+    color: white;
+    text-decoration: none;
+}
+.loginButton a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* rules for the footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    margin-left: 10px;
+    padding: 20px;
+    font-size: 0.85em;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#footerLeft {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 0 10px;
+    width: 300px;
+}
+
+#footerLeft a{
+    padding-top: 12px;
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#footerLeft a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+#footerRight {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    width: 80px;
+}
+
+#notFoundMessage {
+    color: red;
+}
+
+.commandButton {
+    height: 30px;
+    width: 150px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #dd1d5e;
+    font-size: smaller;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+
+.submitButton {
+    height: 18px;
+    border-radius: 8px;
+    border: none;
+    margin: 6px 0 0 4px;
+    text-align: center;
+    background-color: #dd1d5e;
+    color: white;
+    font-size: 0.875em;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    margin: 5px 0 0 10px;
+    border-top: 2px solid #667eea;
+    border-left: 2px solid #667eea;
+    border-right: 2px solid #667eea;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Styles only used on the index page */
+/* Styles used on the left hand Welcome text section */
+#mainLeft {
+    width: 550px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#mainLeft p{
+    font-size: 120%;
+}
+
+.welcomeText {
+    max-width: 400px;
+    font-family: 'Merriweather', serif;
+    color: #34495e;
+    line-height: 1.8;
+}
+
+/* Styles used on the right hand Category section */
+#mainRight {
+    max-width: 600px;
+    border-left: 2px solid #667eea;
+    padding: 25px 0;
+    background: linear-gradient(135deg, #fff9fc 0%, #f8f0f5 100%);
+    text-align: center;
+}
+
+#categorySelections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.category {
+    width: 299px;
+    max-width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #667eea;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category a{
+    text-decoration: none;
+    color: #667eea;
+    transition: color 0.2s ease;
+}
+
+.category a:hover {
+    color: #764ba2;
+}
+
+.category img {
+    max-width: 250px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.category img:hover {
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
+    transform: translateY(-3px);
+}
+
+
+/* Styles used on the category page */
+/* Styles used for the left hand navigation section */
+
+#catLeft {
+    width: 500px;
+    border-right: 2px solid #667eea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 20px 0;
+}
+
+.notSelectedCategory {
+    height: 35px;
+    width: 180px;
+    border-radius: 8px;
+    margin: 15px;
+    text-align: center;
+    line-height: 35px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notSelectedCategory:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notSelectedCategory a{
+    color: white;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+}
+
+.selectedCategory {
+    height: 35px;
+    width: 180px;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    margin: 15px;
+    text-align: center;
+    line-height: 35px;
+    color: #667eea;
+    font-size: 0.9em;
+    font-weight: 700;
+    background: linear-gradient(135deg, #e8f0fe 0%, #f0f4ff 100%);
+    box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
+}
+
+/* styles for the righthand section that shows all the books */
+
+#catRight {
+    padding: 25px 25px 25px 35px;
+    box-shadow: inset 0 0 0 20px #fff9fc;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #fff9fc 0%, #f8f0f5 100%);
+}
+
+.book {
+    width: 350px;
+    margin: 30px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.book img {
+    max-width: 150px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.book:hover {
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.2);
+    transform: translateY(-5px);
+}
+
+.bookDetailBox {
+    margin: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875em;
+}
+
+.bookTitle {
+    font-weight: bold;
+}
+
+.bookDetail {
+    margin-top: 4px;
+    font-size: 0.875em;
+}
+
+.bookPrice {
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+.actionButton {
+    height: 24px;
+    width: 85px;
+    border-radius: 6px;
+    margin-top: 8px;
+    line-height: 24px;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.actionButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+    color: white;
+}
